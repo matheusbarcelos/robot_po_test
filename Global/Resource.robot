@@ -78,7 +78,7 @@ Configurar Chrome
     ${chrome options}=    Evaluate    sys.modules['selenium.webdriver'].ChromeOptions()    sys, selenium.webdriver
     ${excluded}           Create List         enable-logging
     ${preferencias}       Create Dictionary   download.default_directory=${DIRETORIO_DOWNLOAD}
-    Call Method           ${chrome_options}   add_argument    headless
+    #Call Method           ${chrome_options}    add_argument               headless
     Call Method           ${chrome options}    add_experimental_option    prefs    ${preferencias}
     Call Method           ${chrome_options}    add_argument               --ignore-certificate-errors
     Call Method           ${chrome_options}    add_argument               --PageLoadStrategy.EAGER
