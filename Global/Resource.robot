@@ -41,7 +41,8 @@ Login
   Configurar Chrome
   Start Video Recording               alias=None      name=RobotRecording      fps=None    size_percentage=1       embed=True      embed_width=100px    monitor=0        
   Go To                               ${URL}    
-  Maximize Browser Window
+  #Maximize Browser Window
+  Set Window Size     1440      900
   Wait Until Page Contains Element    ${BT_ENTRAR}             5
   Click Element                       ${BT_ENTRAR} 
   Obter informações de login
