@@ -39,7 +39,7 @@ ${JWT}                      eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJjcGYiOiIxMjA
 Login
   Criar diretorio para download       ${DIRETORIO_DOWNLOAD}
   Configurar Chrome
-  Start Video Recording               alias=None      name=RobotRecording      fps=None    size_percentage=1       embed=True      embed_width=100px       monitor=2 
+  Start Video Recording               alias=None      name=RobotRecording      fps=None    size_percentage=1       embed=True      embed_width=100px       monitor=1 
   Go To                               ${URL}    
   Maximize Browser Window
   Wait Until Page Contains Element    ${BT_ENTRAR}             5
