@@ -44,4 +44,3 @@ Validar peticionamento
   # Wait Until Page Contains Element   ${GR_FEITO_PETICIONADO}         5
   # ${DADOS_GRID}                      Get Text                        ${GR_FEITO_PETICIONADO}
   # Should Contain                     ${DADOS_GRID}                   doc.pdf
-  Capture Page Screenshot

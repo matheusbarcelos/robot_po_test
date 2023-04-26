@@ -22,8 +22,9 @@ Buscar procedimento peticionado
   Click element                       ${BT_PESQUISAR_PETICIONAMENTOS}
 
 Efetuar download de documento
-  Click element    ${BT_DOCUMENTO}
-  Click element    ${BT_DOWNLOAD_DOCUMENTO}
+  Click element                       ${BT_DOCUMENTO}
+  Wait Until Page Contains Element    ${BT_DOWNLOAD_DOCUMENTO}       5
+  Click element                       ${BT_DOWNLOAD_DOCUMENTO}
 
 Validar informacoes documento
   ${pdf_file_name}=      Wait Until Keyword Succeeds	3x	13s	 Verifica download de arquivo    ${DIRETORIO_DOWNLOAD}

@@ -2,6 +2,7 @@
 Resource         ${CURDIR}/../Global/Resource.robot
 Suite Setup      Login
 Suite Teardown   Fechar navegador
+Test Teardown    Evidencias
 
 *** Test Cases ***
 
